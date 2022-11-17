@@ -271,7 +271,20 @@ Q97. Write a python program to print below pattern.
  ****
 *****
 ```
-
+Ans.
+```
+n=5
+k=n
+for i in range (0,n+1):
+    for j in range(0,k):
+        print(end=" ")
+    k-=1  
+    
+    for l in range (0,i):
+        print("*",end="")
+    print("")
+    
+```    
 Q98. Write a python program to print below pattern.
 ```
     * 
@@ -279,8 +292,34 @@ Q98. Write a python program to print below pattern.
   * * * 
  * * * * 
 * * * * * 
+Ans.
 ```
+n=5
+k=n
+for i in range (0,n+1):
+    for j in range(0,k):
+        print(end=" ")
+    k-=1  
+    
+    for l in range (0,i):
+        print("*",end="")
+    print("")
 
+         or
+```         
+        
+n=5
+k=n
+for i in range (0,n+1):
+    for j in range(0,k):
+        print(end=" ")
+    k-=1  
+    
+    for l in range (0,i):
+        print("*",end="")
+    print("")
+    
+```
 Q99. Write a python program to print below pattern.
 ```
 1 
@@ -290,6 +329,21 @@ Q99. Write a python program to print below pattern.
 1 2 3 4 5
 ```
 
+
+Ans.
+```
+n=5
+k=n
+for i in range (0,n+1):
+    for j in range(0,k):
+        print(end=" ")
+    k-=1  
+    
+    for l in range (0,i):
+        print("*",end="")
+    print("")
+    
+```
 Q100. Write a python program to print below pattern.
 ```
 A 
@@ -298,3 +352,17 @@ C C C
 D D D D 
 E E E E E 
 ```
+Ans.
+```
+n=5
+k=n
+for i in range (0,n+1):
+    for j in range(0,k):
+        print(end=" ")
+    k-=1  
+    
+    for l in range (0,i):
+        print("*",end="")
+    print("")
+    
+```    
