@@ -2,7 +2,6 @@
 
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
-
 Q2. Why is Python called a dynamically typed language?
 
 Q3. List some pros and cons of Python programming language?
@@ -266,8 +265,8 @@ Q96. Write a python program to print below pattern.
 Ans.
 ```
 n=5
-for i in range(0,n+1):
-    for j in range(0,i):
+for i in range(0,n):
+    for j in range(0,i+1):
         print("*",end=" ")
     print("")   
 
@@ -284,8 +283,8 @@ Ans.
 ```
 n=5
 k=n
-for i in range (0,n+1):
-    for j in range(0,k):
+for i in range (1,n+1):
+    for j in range(0,k-1):
         print(end=" ")
     k-=1  
     
@@ -304,7 +303,7 @@ Q98. Write a python program to print below pattern.
 Ans.
 ```
 n=5
-for i in range (0,n+1):
+for i in range (1,n+1):
     for j in range(0,n-i):
         print(end=" ")
     for l in range (0,i):
