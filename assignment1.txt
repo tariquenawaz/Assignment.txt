@@ -103,15 +103,46 @@ Ans.
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 Ans.
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
-Ans.
+Ans. 
+```
+a=int(input("Please enter your age"))
+if a>=18:
+  print("I can vote")
+else:
+  print("I can't vote")
+  
+```
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
 Ans.
+```
+numbers=[12, 75, 150, 180, 145, 525, 50]
+sum=0
+for i in numbers:
+  if i%2==0:
+    sum=sum+i
+print(sum)
+```
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 Ans.
+```
+a=int(input("Please enter first number"))
+b=int(input("Please enter second number"))
+c=int(input("Please enter third number"))
+if a>b:
+   if a>c:
+      print(a," is greater")
+   else:
+      print(c," is greater")    
+else:
+   if b>c:
+      print(b," is greater")
+   else:
+      print(c," is greater")   
+```
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
 
 - The number must be divisible by five
@@ -123,6 +154,15 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
 Ans.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]    
+for i in numbers:
+       if i%5==0:
+         if i<150:
+            if i>500:
+               break    
+            print(i," is satisfying all conditions")
+```
 Q26. What is a string? How can we declare string in Python?
 Ans.
 Q27. How can we access the string using its index?
@@ -133,16 +173,38 @@ string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
 Ans.
+```
+print(string[9:])
+
+```
 Q29. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
 Ans.
+```
+string = "Big Data iNeuron"
+a=string[9:]
+b=""
+for i in range(6,-1,-1):
+       b=b+a[i]
+print(b)   
+```
 Q30. Resverse the string given in the above question.
 Ans.
+```
+string = "Big Data iNeuron"
+b=""
+for i in range(len(string)-1,-1,-1):
+       b=b+string[i]
+print(b) 
+```
 Q31. How can you delete entire string at once?
 Ans.
+```
+del(string)
+```
 Q32. What is escape sequence?
 Ans.
 Q33. How can you print the below string?
@@ -150,6 +212,9 @@ Q33. How can you print the below string?
 'iNeuron's Big Data Course'
 ```
 Ans.
+```
+print("'iNeuron's Big Data Course'")
+```
 Q34. What is a list in Python?
 Ans.
 Q35. How can you create a list in Python?
@@ -161,8 +226,12 @@ Q37. Write a code to access the word "iNeuron" from the given list.
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 ``` 
 Ans.
+```
+print(lst[4][2])
+```
 Q38. Take a list as an input from the user and find the length of the list.
 Ans.
+
 Q39. Add the word "Big" in the 3rd index of the given list.
 ```
 lst = ["Welcome", "to", "Data", "course"]
