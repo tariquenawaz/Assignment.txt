@@ -67,16 +67,24 @@ Ans.Indententation means a blank space produced by leaving some space at the beg
 Q13. How can we throw some output in Python?
 Ans.we can throw some output in python using print() statement. Whatever enclosed inside this curly braces will be output on the terminal.
 Q14. What are operators in Python?
-Ans. O
+Ans. 
 Q15. What is difference between / and // operators?
 Ans.
 Q16. Write a code that gives following as an output.
 ```
 iNeuroniNeuroniNeuroniNeuron
 ```
-Ans.
+Ans. print("iNeuron"*4)
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 Ans.
+
+a=int(input("Please enter a number to check weather it is even or odd"))
+if a%2==0:
+   print(a,"is a even number")
+   
+else:
+   print(a,"is a odd number")
+
 Q18. What are boolean operator?
 Ans.
 Q19. What will the output of the following?
