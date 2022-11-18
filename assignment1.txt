@@ -255,13 +255,33 @@ tup = tuple(input("enter space seperated tuple values").split(" "))
 print(len(tup))
 ```
 Q45. What are sets in Python?
-Ans.
+Ans. sets are also collection of data in python in which values can not be repeated and are mutable
 Q46. How can you create a set?
 Ans.
+```
+a={1,2,3,3,4,5,6}
+print(type(a))
+
+      or
+      
+b= set(i for i in range(1,100))
+print(b,type(b))
+```
 Q47. Create a set and add "iNeuron" in your set.
 Ans.
+```
+a= set()
+a.add("iNeuron")
+print(a)
+```
+
 Q48. Try to add multiple values using add() function.
-Ans.
+Ans.a= set()
+a.add("iNeuron")
+a.add(1,2,3,4)
+print(a)
+
+Throws an error as it says add can take only one input at a time
 Q49. How is update() different from add()?
 Ans.
 Q50. What is clear() in sets?
