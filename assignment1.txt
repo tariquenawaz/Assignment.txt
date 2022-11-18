@@ -238,15 +238,22 @@ lst = ["Welcome", "to", "Data", "course"]
 ```
 Ans.
 Q40. What is a tuple? How is it different from list?
-Ans.
+Ans.Tuple is also sequence of data but it is different from list as it is immutable and lists are mutable
 Q41. How can you create a tuple in Python?
+    a=(1,2,3,4,5)
+         or
+    a=tuple()
 Ans.
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
-Ans.
+Ans.No, as tuples are immutable we can not change it's value for lifetime
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
-Ans.
+Ans.No, tuple do not have any function called append
 Q44. Take a tuple as an input and print the count of elements in it.
 Ans.
+```
+tup = tuple(input("enter space seperated tuple values").split(" "))
+print(len(tup))
+```
 Q45. What are sets in Python?
 Ans.
 Q46. How can you create a set?
