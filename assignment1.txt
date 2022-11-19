@@ -67,9 +67,21 @@ Ans.Indententation means a blank space produced by leaving some space at the beg
 Q13. How can we throw some output in Python?
 Ans.we can throw some output in python using print() statement. Whatever enclosed inside this curly braces will be output on the terminal.
 Q14. What are operators in Python?
-Ans. 
+Ans. Operators are used to perform operations on variables and values.
+Python divides the operators in the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Identity operators
+Membership operators
+Bitwise operators
 Q15. What is difference between / and // operators?
-Ans.
+Ans. / is a airthmetic operator when used gives output in decimal form where as // operator gives us values in integer form i.e. all the values after decimal will be lost. ex-  a=5
+           b=2
+           a/b=2.5
+           a//b=2
 Q16. Write a code that gives following as an output.
 ```
 iNeuroniNeuroniNeuroniNeuron
@@ -86,20 +98,20 @@ else:
    print(a,"is a odd number")
 
 Q18. What are boolean operator?
-Ans.
+Ans.Any operator that gives output in the form of true or false can be termed as boolean opeartor. There are three logical operators that are used to compare values. They evaluate expressions down to Boolean values, returning either True or False .
 Q19. What will the output of the following?
 ```
-1 or 0
+1 or 0 - 1
 
-0 and 0
+0 and 0 - 0
 
-True and False and True
+True and False and True - false
 
-1 or 0 or 0
+1 or 0 or 0 - 1
 ```
 Ans.
 Q20. What are conditional statements in Python?
-Ans.
+Ans. Conditional statement are those statements in python that controls the flow of execution of code. 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 Ans.
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
