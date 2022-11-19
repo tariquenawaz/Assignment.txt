@@ -112,8 +112,9 @@ True and False and True - false
 Ans.
 Q20. What are conditional statements in Python?
 Ans. Conditional statement are those statements in python that controls the flow of execution of code. 
+for example- if else is used to conrol the flow of exection i.e. if certain expression will be true it will goes that way or otherwise it will go another way. 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
-Ans.
+Ans.if any expression written inside if statement is true then execution will go inside it otherwise it will go to else statement. however if statement inside if statement is not true it will check for subsquent elif statements and then goes to else.
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
 Ans. 
 ```
@@ -176,9 +177,16 @@ for i in numbers:
             print(i," is satisfying all conditions")
 ```
 Q26. What is a string? How can we declare string in Python?
-Ans.
+Ans. Strings are nothing but a collection of charcters that binded together. it is an immutable intity and we can use index to iterate over a string.
+     To declare a string we need enclose it in either a single quot or double
+     ex- a='Tarique'
+         b="Tarique"
 Q27. How can we access the string using its index?
-Ans.
+Ans. we can access each element of string using index.
+     ex- for i in a
+           print(a[])
+           
+           this will print each element one by one
 Q28. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
@@ -228,11 +236,16 @@ Ans.
 print("'iNeuron's Big Data Course'")
 ```
 Q34. What is a list in Python?
-Ans.
+Ans.Lists are used to store multiple items in a single variable.
+    Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and       usage.
 Q35. How can you create a list in Python?
-Ans.
+Ans.a=list()
+    a.append('xyz')
+          or
+    a=['xyz',1,2,3]
 Q36. How can we access the elements in a list?
-Ans.
+Ans.We can access the elements in a list using idex.
+        a[0] will refer to 'xyz' i.e. first element
 Q37. Write a code to access the word "iNeuron" from the given list.
 ```
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
@@ -243,12 +256,14 @@ print(lst[4][2])
 ```
 Q38. Take a list as an input from the user and find the length of the list.
 Ans.
+    a=list(input('Enter elements of list using comma').split(','))
+    print(len(a))
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 ```
 lst = ["Welcome", "to", "Data", "course"]
 ```
-Ans.
+Ans.lst[2]='Big'
 Q40. What is a tuple? How is it different from list?
 Ans.Tuple is also sequence of data but it is different from list as it is immutable and lists are mutable
 Q41. How can you create a tuple in Python?
