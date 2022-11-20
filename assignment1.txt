@@ -101,13 +101,13 @@ Q18. What are boolean operator?
 Ans.Any operator that gives output in the form of true or false can be termed as boolean opeartor. There are three logical operators that are used to compare values. They evaluate expressions down to Boolean values, returning either True or False .
 Q19. What will the output of the following?
 ```
-1 or 0 - 1
+1 or 0 = 1
 
-0 and 0 - 0
+0 and 0 = 0
 
-True and False and True - false
+True and False and True = false
 
-1 or 0 or 0 - 1
+1 or 0 or 0 = 1
 ```
 Ans.
 Q20. What are conditional statements in Python?
@@ -226,7 +226,8 @@ Ans.
 del(string)
 ```
 Q32. What is escape sequence?
-Ans.
+Ans.An escape sequence is a sequence of characters that does not represent itself when used inside a character or string literal, but is translated into another character or a sequence of characters that may be difficult or impossible to represent directly.
+
 Q33. How can you print the below string?
 ```
 'iNeuron's Big Data Course'
@@ -310,11 +311,11 @@ print(a)
 
 Throws an error as it says add can take only one input at a time
 Q49. How is update() different from add()?
-Ans.
+Ans.Update can be used to add multiple value at once by passng multiple parameters seperated by a comma. Whereas add can take only one value at once.
 Q50. What is clear() in sets?
-Ans.
+Ans.clear() i used to remove all the elements of set and make it an empty set.
 Q51. What is frozen set?
-Ans.
+Ans.Python frozenset() Method creates an immutable Set object from an iterable. It is a built-in Python function. As it is a set object therefore we cannot have duplicate values in the frozenset
 Q52. How is frozen set different from set?
 Ans.
 Q53. What is union() in sets? Explain via code.
