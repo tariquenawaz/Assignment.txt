@@ -466,6 +466,17 @@ print(ci)
 ```
 Q79. Write a Python program to check if a number is prime or not.
 ```
+lst=list(x for x in range(2,101))
+for a in lst:
+ flag=False   
+ for i in range(2,a):
+    if a%i==0:
+        flag=True
+        break
+ if flag==False:
+        print(a,"Prime number")
+ else:
+    print(a,"Not a Prime number")        
 
 ```
 
