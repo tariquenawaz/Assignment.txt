@@ -317,23 +317,32 @@ Ans.clear() i used to remove all the elements of set and make it an empty set.
 Q51. What is frozen set?
 Ans.Python frozenset() Method creates an immutable Set object from an iterable. It is a built-in Python function. As it is a set object therefore we cannot have duplicate values in the frozenset
 Q52. How is frozen set different from set?
-Ans.
+Ans. Frozen set is just an immutable version of a Python set object. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation. Due to this, frozen sets can be used as keys in Dictionary or as elements of another set.
 Q53. What is union() in sets? Explain via code.
-Ans.
+Ans. Union() function in python is just as same as we have in maths. It combine all the values from two sets i.e. it will have all the values from set A or set B and all the that are common in both will b considered once . (A union B) = A + B -(A intersection B) 
 Q54. What is intersection() in sets? Explain via code.
-Ans.
+Ans.It represent set of all the values that are common to both sets. 
 Q55. What is dictionary ibn Python?
-Ans.
+Ans.Dictionary is also a collection of data wher data are stored in key and value pair i.e. for each value there will be a key related to it and this way we look up any value in time complexity O(1) 
 Q56. How is dictionary different from all other data structures.
+Ans.Dictionary in Python on the other hand is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized
+Q57. How can we declare a dictionary in Python?
 Ans.
-Q57. How can we delare a dictionary in Python?
-Ans.
+```
+dict={"a":1,'b':2,'c':3}
+print(dict)
+
+dict1={}
+dict1['a']=3
+dict1['b']=4
+print(dict1)
+```
 Q58. What will the output of the following?
 ```
 var = {}
 print(type(var))
 ```
-Ans.
+Ans. <class 'dict'> i.e. it belongs to dictionary class
 Q59. How can we add an element in a dictionary?
 Ans.
 Q60. Create a dictionary and access all the values in that dictionary.
