@@ -344,15 +344,29 @@ print(type(var))
 ```
 Ans. <class 'dict'> i.e. it belongs to dictionary class
 Q59. How can we add an element in a dictionary?
-Ans.
+Ans. dict['key']=value
 Q60. Create a dictionary and access all the values in that dictionary.
-Ans.
+Ans.dict={"a":1,'b':2,'c':3}
+    for key in dict:
+        print(dict[key])
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
 Ans.
+```
+dict={"a":1,'b':2,'c':3,'d':{'one':1,'two':2,'three':3}}
+for key in dict['d']:
+    print(dict['d'][key])
+```
 Q62. What is the use of get() function?
-Ans.
+Ans. If we call a get function using dictionary and pass a key (i.e. dict.key('a')) iit will return value as an output. If we pass a value that is not available in key then it return none. It accepet one more parameter as a value and same it will return if the specified key is not present in dictionary. lets understand this witha na example
+```
+dict={"a":1,'b':2,'c':3,'d':{'one':1,'two':2,'three':3}}
+print(dict.get('a'))                        # output- 1
+print(dict.get('z'))                        # output-None
+print(dict.get('z','No such key found'))    # output-No such key found
+```
 Q63. What is the use of items() function?
-Ans.
+Ans.items() function used in dictionary to make both key and value an iterable object and we can acces both key and value using any variable ex-
+ 
 Q64. What is the use of pop() function?
 Ans.
 Q65. What is the use of popitems() function?
