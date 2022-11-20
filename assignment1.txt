@@ -366,17 +366,38 @@ print(dict.get('z','No such key found'))    # output-No such key found
 ```
 Q63. What is the use of items() function?
 Ans.items() function used in dictionary to make both key and value an iterable object and we can acces both key and value using any variable ex-
- 
+    dict={"a":1,'b':2,'c':3,'d':4}
+    for k,v in dict.items():
+       print(k,':',v)
 Q64. What is the use of pop() function?
-Ans.
+Ans. The list pop in Python removes and returns the popped value, or in other words, the item present at the specified index value
+
+    a=lst.pop(2)  #This will remove element at index 2 from the list and return the same value which then we are assigning to variable a.
 Q65. What is the use of popitems() function?
-Ans.
+Ans.Python dictionary popitem() method removes the last inserted key-value pair from the dictionary and returns it as a tuple.
+```
+ex-dict={"a":1,'b':2,'c':3,'d':4}
+print(dict.popitem())  #output-4
+print(dict.popitem())  #output-3
+print(dict.popitem())  #output-2
+print(dict.popitem())  #output-1
+```
 Q66. What is the use of keys() function?
-Ans.
+Ans. keys() funtion is used to retrieve each key as an iterable from a dictionary
+```
+dict={"a":1,'b':2,'c':3,'d':4}
+for keys in dict.keys():
+    print(keys)
+```
 Q67. What is the use of values() function?
-Ans.
+Ans. values() funtion is used to retrieve each value as an iterable from a dictionary
+```
+dict={"a":1,'b':2,'c':3,'d':4}
+for values in dict.values():
+    print(values)
+```
 Q68. What are loops in Python?
-Ans.
+Ans.Looping means repeating something over and over until a particular condition is satisfied. A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. Such a type of statement is also known as an iterative statement.10
 Q69. How many type of loop are there in Python?
 Ans.
 Q70. What is the difference between for and while loops?
