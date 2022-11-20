@@ -516,10 +516,34 @@ for i in range(1,rng-1):
 ```
 
 Q82. Write a Python program to interchange the first and last element in a list.
+```
+lst=input("Enter elements of list seperated by a space").split(' ')
+for i in range(0,len(lst)):
+   lst[i]=int(lst[i])
+temp=lst[-1]
+lst[-1]=lst[0]
+lst[0]=temp
+print(lst)
+```
 
 Q83. Write a Python program to swap two elements in a list.
+```
+lst=input("Enter elements of list seperated by a space").split(' ')
+i=int(input("Enter 1st index to swap"))
+j=int(input("Enter 2nd index to swap"))
+for x in range(0,len(lst)):
+   lst[x]=int(lst[x])
+print("List before swapping",lst)   
+temp=lst[j]
+lst[j]=lst[i]
+lst[i]=temp
+print("List after swapping",lst)
+```
 
 Q84. Write a Python program to find N largest element from a list.
+```
+
+```
 
 Q85. Write a Python program to find cumulative sum of a list.
 
