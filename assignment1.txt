@@ -561,25 +561,89 @@ print(lst1)
 ```
 
 Q85. Write a Python program to find cumulative sum of a list.
+```
+lst=input("Enter elements of list seperated by a space").split(' ')
+sum=0
+for a in range(0,len(lst)):
+      lst[a]=int(lst[a])
+      sum=sum+lst[a]
+print(lst)
+print('Sum of the list is',sum)
+```
 
 Q86. Write a Python program to check if a string is palindrome or not.
+```
+str=input("Enter a string to check weather it's palindrome or not")
+str1=str[-1::-1]
+if str==str1:      
+  print("Palindrom string")
+else:
+  print("Not a palindrom string")   
+```
 
 Q87. Write a Python program to remove i'th element from a string.
+```
+str=input("Enter a string")
+i=int(input("Enter a index to remove element"))
+str1=str[:i]+str[i+1:]
+print('String before removing ith index',str)
+print('String after removing ith index',str1)  
+
+```
 
 Q88. Write a Python program to check if a substring is present in a given string.
+```
+str=input("Enter a string")
+sub_str=input("Enter a substring to check weather it is present in this string or not")
+if str.find(sub_str):
+ print('Yes it is there')
+else:
+  print("It's not there")  
+```
 
 Q89. Write a Python program to find words which are greater than given length k.
-
+```
+str=input("Enter a string")
+a=int(input("Enter a specific length to find words within that limit"))
+split_str=str.split(' ')
+for i in split_str:
+      if len(i)>=a:
+            print(i)
+```
 Q90. Write a Python program to extract unquire dictionary values.
+```
+dict = {'a': [5, 6, 7, 8],
+        'b': [10, 11, 7, 5],
+        'c': [6, 12, 10, 8],
+        'd': [1, 2, 5]}
+print('Original dictionary',dict)
+dict1=sorted({j for i in dict.values() for j in i})
+print(dict1)
 
+```
 Q91. Write a Python program to merge two dictionary.
+```
+dict1 = {'a': [5, 6, 7, 8],
+         'b': [10, 11, 7, 5],
+         'c': [6, 12, 10, 8],
+         'd': [1, 2, 5]}
+dict2=  {'e':[4,2,6,3],
+         'f':[7,2,5,3],
+         'g':[1,4,6,8],
+         'h':[3,2,4,7]}
+print('Original dictionary',dict1,dict2)
+dict1.update(dict2)
+print("After merging two dictionaries",dict1)
+```
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+```
 
+```
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
 Input: list = [9, 5, 6]
