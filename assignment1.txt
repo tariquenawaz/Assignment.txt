@@ -542,7 +542,22 @@ print("List after swapping",lst)
 
 Q84. Write a Python program to find N largest element from a list.
 ```
-
+lst=input("Enter elements of list seperated by a space").split(' ')
+n=int(input("Enter value of n to find n largest element"))
+for a in range(0,len(lst)):
+      lst[a]=int(lst[a])
+lst1=[]
+count=5
+while count>0:
+ max=lst[0]
+ for i in lst:
+   if i>max:
+      max=i
+ print(max)     
+ lst1.append(max)  
+ lst.remove(max)                  
+ count=count-1
+print(lst1)
 ```
 
 Q85. Write a Python program to find cumulative sum of a list.
